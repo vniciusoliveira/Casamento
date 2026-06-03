@@ -7,14 +7,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #0d1f3c;
-    --navy-dark: #070f1e;
+    --navy: #1a3a6e;
+    --navy-dark: #f9f7f3;
     --navy-mid: #1a3a6e;
-    --gold: #c4a864;
-    --gold-light: #e8c96a;
-    --cream: #f7f3ee;
-    --text-light: #d4e4f0;
-    --text-mid: #a8c4d8;
+    --gold: #b09050;
+    --gold-light: #c4a864;
+    --cream: #f9f7f3;
+    --text-light: #3a3028;
+    --text-mid: #1a3a6e;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,9 +22,9 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--navy-dark);
+    background: #f9f7f3;
     font-family: 'Jost', sans-serif;
-    color: #fff;
+    color: #1a1a1a;
     overflow-x: hidden;
   }
 
@@ -38,7 +38,7 @@
   }
   .star {
     position: absolute;
-    background: #fff;
+    background: #b09050;
     border-radius: 50%;
     animation: twinkle var(--d, 3s) ease-in-out infinite;
     opacity: 0;
@@ -70,7 +70,7 @@
   .hero-border {
     position: absolute;
     inset: 16px;
-    border: 0.5px solid rgba(196,168,100,0.2);
+    border: 0.5px solid rgba(176,144,80,0.35);
     pointer-events: none;
   }
 
@@ -79,7 +79,7 @@
     font-weight: 200;
     font-size: 10px;
     letter-spacing: 6px;
-    color: var(--gold);
+    color: #7a6a50;
     text-transform: uppercase;
     margin-bottom: 28px;
     opacity: 0;
@@ -95,7 +95,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: clamp(56px, 12vw, 96px);
-    color: #fff;
+    color: #1a1a1a;
     line-height: 0.95;
     display: block;
   }
@@ -133,7 +133,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: 42px;
-    color: #fff;
+    color: #1a1a1a;
     line-height: 1;
   }
 
@@ -142,7 +142,7 @@
     font-weight: 200;
     font-size: 8px;
     letter-spacing: 3px;
-    color: var(--gold);
+    color: #7a6a50;
     text-transform: uppercase;
     margin-top: 4px;
   }
@@ -157,7 +157,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 18px;
-    color: var(--text-light);
+    color: #5a5248;
     margin-top: 8px;
   }
 
@@ -180,7 +180,7 @@
     font-weight: 300;
     font-style: italic;
     font-size: clamp(17px, 3vw, 21px);
-    color: var(--text-light);
+    color: #5a5248;
     line-height: 1.9;
     max-width: 520px;
     opacity: 0;
@@ -205,7 +205,7 @@
     font-weight: 200;
     font-size: 8px;
     letter-spacing: 4px;
-    color: #c8dce8;
+    color: #5a6a7a;
     text-transform: uppercase;
   }
 
@@ -241,7 +241,7 @@
     font-weight: 200;
     font-size: 9px;
     letter-spacing: 5px;
-    color: var(--gold);
+    color: #7a6a50;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -249,7 +249,7 @@
   .section-title {
     font-family: 'Dancing Script', cursive;
     font-size: clamp(38px, 8vw, 56px);
-    color: #fff;
+    color: #1a1a1a;
     line-height: 1.1;
     margin-bottom: 24px;
   }
@@ -263,8 +263,8 @@
 
   /* ── CONTAGEM REGRESSIVA ── */
   .countdown-section {
-    background: linear-gradient(135deg, rgba(26,58,110,0.3), rgba(13,31,60,0.8));
-    border: 0.5px solid rgba(196,168,100,0.2);
+    background: linear-gradient(135deg, rgba(176,144,80,0.08), rgba(26,58,110,0.06));
+    border: 0.5px solid rgba(176,144,80,0.35);
     padding: 48px 32px;
     margin: 0 24px 0;
     max-width: 700px;
@@ -292,7 +292,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: clamp(44px, 10vw, 72px);
-    color: #fff;
+    color: #1a1a1a;
     line-height: 1;
     min-width: 2ch;
     text-align: center;
@@ -303,7 +303,7 @@
     font-weight: 200;
     font-size: 8px;
     letter-spacing: 3px;
-    color: var(--gold);
+    color: #7a6a50;
     text-transform: uppercase;
     margin-top: 6px;
   }
@@ -311,7 +311,7 @@
   .countdown-sep {
     font-family: 'Cormorant Garamond', serif;
     font-size: 48px;
-    color: var(--gold);
+    color: #b09050;
     opacity: 0.4;
     align-self: flex-start;
     padding-top: 8px;
@@ -331,8 +331,8 @@
   }
 
   .info-card {
-    background: rgba(26,58,110,0.25);
-    border: 0.5px solid rgba(196,168,100,0.2);
+    background: rgba(26,58,110,0.05);
+    border: 0.5px solid rgba(176,144,80,0.35);
     padding: 28px 20px;
     text-align: center;
   }
@@ -348,7 +348,7 @@
     font-weight: 200;
     font-size: 8px;
     letter-spacing: 4px;
-    color: var(--gold);
+    color: #7a6a50;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
@@ -357,7 +357,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     font-size: 20px;
-    color: #fff;
+    color: #1a1a1a;
     margin-bottom: 6px;
     line-height: 1.3;
   }
@@ -366,15 +366,15 @@
     font-family: 'Jost', sans-serif;
     font-weight: 200;
     font-size: 12px;
-    color: #c8dce8;
+    color: #5a6a7a;
     line-height: 1.6;
     letter-spacing: 0.3px;
   }
 
   /* ── RSVP ── */
   .rsvp-section {
-    background: linear-gradient(135deg, rgba(196,168,100,0.08), rgba(26,58,110,0.4));
-    border: 0.5px solid rgba(196,168,100,0.25);
+    background: linear-gradient(135deg, rgba(176,144,80,0.07), rgba(26,58,110,0.05));
+    border: 0.5px solid rgba(176,144,80,0.3);
     padding: 60px 32px;
     margin: 0 24px;
     max-width: 700px;
@@ -390,7 +390,7 @@
     font-weight: 300;
     font-style: italic;
     font-size: 19px;
-    color: var(--text-light);
+    color: #5a5248;
     line-height: 1.85;
     margin-bottom: 36px;
     max-width: 480px;
@@ -400,7 +400,7 @@
 
   .rsvp-btn {
     display: inline-block;
-    background: var(--gold);
+    background: #b09050;
     color: var(--navy-dark);
     font-family: 'Jost', sans-serif;
     font-weight: 400;
@@ -442,7 +442,7 @@
   .footer-names {
     font-family: 'Dancing Script', cursive;
     font-size: 36px;
-    color: var(--gold);
+    color: #b09050;
     margin-bottom: 12px;
   }
 
@@ -451,13 +451,13 @@
     font-weight: 200;
     font-size: 10px;
     letter-spacing: 5px;
-    color: #c8dce8;
+    color: #5a6a7a;
     text-transform: uppercase;
   }
 
   .stars-row {
     font-size: 10px;
-    color: var(--gold);
+    color: #b09050;
     letter-spacing: 8px;
     opacity: 0.5;
     margin: 24px 0 12px;
@@ -504,56 +504,56 @@
 
   <!-- Flores cantos -->
   <svg class="floral-hero-top-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0" y1="200" x2="100" y2="60" stroke="#1e3a6e" stroke-width="2"/>
-    <line x1="100" y1="60" x2="60" y2="5" stroke="#1e3a6e" stroke-width="1.5"/>
-    <line x1="100" y1="60" x2="160" y2="20" stroke="#1e3a6e" stroke-width="1.5"/>
-    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#1a3a6e" opacity="0.5" transform="rotate(-30 35 110)"/>
-    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#152d5c" opacity="0.4" transform="rotate(15 12 155)"/>
-    <path d="M5,120 Q55,85 100,115" stroke="#c4a864" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <line x1="0" y1="200" x2="100" y2="60" stroke="#c8b89a" stroke-width="2"/>
+    <line x1="100" y1="60" x2="60" y2="5" stroke="#c8b89a" stroke-width="1.5"/>
+    <line x1="100" y1="60" x2="160" y2="20" stroke="#c8b89a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#c5d5c0" opacity="0.5" transform="rotate(-30 35 110)"/>
+    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#b8cbb4" opacity="0.4" transform="rotate(15 12 155)"/>
+    <path d="M5,120 Q55,85 100,115" stroke="#b09050" stroke-width="0.8" fill="none" opacity="0.5"/>
     <g transform="translate(60,5)"><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(300)"/><circle cx="0" cy="0" r="8" fill="#f0d878"/><circle cx="0" cy="0" r="4" fill="#c4a864"/></g>
     <g transform="translate(160,19)"><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(0)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(72)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(144)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(216)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(288)"/><circle cx="0" cy="0" r="5.5" fill="#f0d878"/></g>
   </svg>
 
   <svg class="floral-hero-top-right" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0" y1="200" x2="100" y2="60" stroke="#1e3a6e" stroke-width="2"/>
-    <line x1="100" y1="60" x2="60" y2="5" stroke="#1e3a6e" stroke-width="1.5"/>
-    <line x1="100" y1="60" x2="160" y2="20" stroke="#1e3a6e" stroke-width="1.5"/>
-    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#1a3a6e" opacity="0.5" transform="rotate(-30 35 110)"/>
-    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#152d5c" opacity="0.4" transform="rotate(15 12 155)"/>
-    <path d="M5,120 Q55,85 100,115" stroke="#c4a864" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <line x1="0" y1="200" x2="100" y2="60" stroke="#c8b89a" stroke-width="2"/>
+    <line x1="100" y1="60" x2="60" y2="5" stroke="#c8b89a" stroke-width="1.5"/>
+    <line x1="100" y1="60" x2="160" y2="20" stroke="#c8b89a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#c5d5c0" opacity="0.5" transform="rotate(-30 35 110)"/>
+    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#b8cbb4" opacity="0.4" transform="rotate(15 12 155)"/>
+    <path d="M5,120 Q55,85 100,115" stroke="#b09050" stroke-width="0.8" fill="none" opacity="0.5"/>
     <g transform="translate(60,5)"><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(300)"/><circle cx="0" cy="0" r="8" fill="#f0d878"/><circle cx="0" cy="0" r="4" fill="#c4a864"/></g>
     <g transform="translate(160,19)"><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(0)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(72)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(144)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(216)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(288)"/><circle cx="0" cy="0" r="5.5" fill="#f0d878"/></g>
   </svg>
 
   <svg class="floral-hero-left" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0" y1="200" x2="100" y2="60" stroke="#1e3a6e" stroke-width="2"/>
-    <line x1="100" y1="60" x2="60" y2="5" stroke="#1e3a6e" stroke-width="1.5"/>
-    <line x1="100" y1="60" x2="160" y2="20" stroke="#1e3a6e" stroke-width="1.5"/>
-    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#1a3a6e" opacity="0.5" transform="rotate(-30 35 110)"/>
-    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#152d5c" opacity="0.4" transform="rotate(15 12 155)"/>
-    <path d="M5,120 Q55,85 100,115" stroke="#c4a864" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <line x1="0" y1="200" x2="100" y2="60" stroke="#c8b89a" stroke-width="2"/>
+    <line x1="100" y1="60" x2="60" y2="5" stroke="#c8b89a" stroke-width="1.5"/>
+    <line x1="100" y1="60" x2="160" y2="20" stroke="#c8b89a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#c5d5c0" opacity="0.5" transform="rotate(-30 35 110)"/>
+    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#b8cbb4" opacity="0.4" transform="rotate(15 12 155)"/>
+    <path d="M5,120 Q55,85 100,115" stroke="#b09050" stroke-width="0.8" fill="none" opacity="0.5"/>
     <g transform="translate(60,5)"><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(300)"/><circle cx="0" cy="0" r="8" fill="#f0d878"/><circle cx="0" cy="0" r="4" fill="#c4a864"/></g>
     <g transform="translate(160,19)"><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(0)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(72)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(144)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(216)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(288)"/><circle cx="0" cy="0" r="5.5" fill="#f0d878"/></g>
   </svg>
 
   <svg class="floral-hero-right" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0" y1="200" x2="100" y2="60" stroke="#1e3a6e" stroke-width="2"/>
-    <line x1="100" y1="60" x2="60" y2="5" stroke="#1e3a6e" stroke-width="1.5"/>
-    <line x1="100" y1="60" x2="160" y2="20" stroke="#1e3a6e" stroke-width="1.5"/>
-    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#1a3a6e" opacity="0.5" transform="rotate(-30 35 110)"/>
-    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#152d5c" opacity="0.4" transform="rotate(15 12 155)"/>
-    <path d="M5,120 Q55,85 100,115" stroke="#c4a864" stroke-width="0.8" fill="none" opacity="0.5"/>
+    <line x1="0" y1="200" x2="100" y2="60" stroke="#c8b89a" stroke-width="2"/>
+    <line x1="100" y1="60" x2="60" y2="5" stroke="#c8b89a" stroke-width="1.5"/>
+    <line x1="100" y1="60" x2="160" y2="20" stroke="#c8b89a" stroke-width="1.5"/>
+    <ellipse cx="35" cy="110" rx="28" ry="11" fill="#c5d5c0" opacity="0.5" transform="rotate(-30 35 110)"/>
+    <ellipse cx="12" cy="155" rx="22" ry="9" fill="#b8cbb4" opacity="0.4" transform="rotate(15 12 155)"/>
+    <path d="M5,120 Q55,85 100,115" stroke="#b09050" stroke-width="0.8" fill="none" opacity="0.5"/>
     <g transform="translate(60,5)"><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(0)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(60)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(120)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(180)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(240)"/><ellipse cx="0" cy="-18" rx="9" ry="18" fill="#ddd3b8" opacity="0.92" transform="rotate(300)"/><circle cx="0" cy="0" r="8" fill="#f0d878"/><circle cx="0" cy="0" r="4" fill="#c4a864"/></g>
     <g transform="translate(160,19)"><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(0)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(72)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(144)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(216)"/><ellipse cx="0" cy="-13" rx="6.5" ry="13" fill="#ddd3b8" opacity="0.82" transform="rotate(288)"/><circle cx="0" cy="0" r="5.5" fill="#f0d878"/></g>
   </svg>
 
   <!-- Conteúdo -->
-  <p class="pre-label">Têm a honra de convidar você para</p>
+  <p class="pre-label">Temos a honra de convidar você para</p>
 
   <div class="hero-names">
-    <span class="hero-name">Vinícius</span>
+    <span class="hero-name" style="color:#b09050;">Vinícius</span>
     <span class="hero-amp">&amp;</span>
-    <span class="hero-name">Kamila</span>
+    <span class="hero-name" style="color:#b09050;">Kamila</span>
   </div>
 
   <div class="hero-date">
@@ -639,13 +639,13 @@
 <!-- RSVP -->
 <div class="rsvp-section">
   <p class="section-label">✦ &nbsp; Confirmação de Presença &nbsp; ✦</p>
-  <div style="font-family:'Dancing Script',cursive;font-size:clamp(34px,7vw,50px);color:#fff;margin-bottom:16px;line-height:1.1;">
+  <div style="font-family:'Dancing Script',cursive;font-size:clamp(34px,7vw,50px);color:#b09050;margin-bottom:16px;line-height:1.1;">
     Você vai<br>estar lá?
   </div>
   <div class="section-divider"></div>
   <p class="rsvp-text">
     Sua presença é muito importante para nós.<br>
-    Por favor, confirme sua presença<br>até <strong style="color:#fff;font-style:normal;">27 de junho de 2026.</strong>
+    Por favor, confirme sua presença<br>até <strong style="font-style:normal;">27 de junho de 2026.</strong>
   </p>
   <a class="rsvp-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSf87R7MnYF1HV07fLYuf6QR2DnvUEwMqIaPSCwWjul0i6gIIA/viewform?usp=dialog" target="_blank">
     <span>Confirmar Presença</span>
@@ -659,7 +659,7 @@
   <p class="section-label">✦ &nbsp; Lista de Presentes &nbsp; ✦</p>
   <div class="section-title">Presentes</div>
   <div class="section-divider"></div>
-  <p style="font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:19px;color:#d4e4f0;line-height:1.9;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;">
+  <p style="font-family:'Cormorant Garamond',serif;font-weight:300;font-style:italic;font-size:19px;color:#5a5248;line-height:1.9;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;">
     Sua presença já é o maior presente para nós.<br>
     Mas se desejar nos presentear,<br>
     pode enviar um Pix pelo QR code abaixo.
@@ -667,8 +667,8 @@
   <div style="display:inline-block;background:rgba(255,255,255,0.97);padding:20px;margin-bottom:20px;">
     <img src="data:image/png;base64,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" alt="QR Code Pix" style="width:200px;height:200px;display:block;image-rendering:pixelated;"/>
   </div>
-  <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:10px;letter-spacing:3px;color:#a8c4d8;text-transform:uppercase;margin-top:8px;">Pix · 237.979.048-51</p>
-  <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:11px;color:#a8c4d8;margin-top:6px;letter-spacing:0.5px;">O valor é livre — com todo o nosso amor 🤍</p>
+  <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:10px;letter-spacing:3px;color:#8a7a6a;text-transform:uppercase;margin-top:8px;">Pix · Vinícius de Sousa Oliveira</p>
+  <p style="font-family:'Jost',sans-serif;font-weight:200;font-size:11px;color:#8a7a6a;margin-top:6px;letter-spacing:0.5px;">O valor é livre — com todo o nosso amor 🤍</p>
 </section>
 
 <!-- FOOTER -->
